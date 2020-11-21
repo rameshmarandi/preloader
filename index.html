@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style>
+
+   *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+   }
+   html{
+     font-size: 64.5%
+   }
+   .main_div{
+     width: 100vw;
+     height: 100vh;
+     background-color: #2980b9;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .center_div{
+     width: 40vw;
+     height: calc(100vh - 50vh);
+     background-color: #3498db;
+     display: grid;
+     place-items:center;
+     border-radius: 16px;
+     box-shadow: 2px -2px 5px 4px #bdc3c7;
+   }
+   .loader{
+     /* WARNI */
+     width: 10rem;
+     height: 10rem;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 1.5rem solid #fff;
+     border-top: 1.5rem solid #c0392b;
+     animation: loade 1.55s linear infinite;
+     box-shadow: 2px 2px 12px 2px #27ae60;
+   }
+   @keyframes loade{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+   }
+</style>
+</head>
+<body>
+  <div class="main_div">
+    <div class="center_div">
+      <span class="loader"></span>
+    </div>
+  </div>
+
+</body>
+</html>
